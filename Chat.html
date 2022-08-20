@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>LETS CHAT WEBSITE (SCHOOL)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js">
+</script> <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js">
+    </script>`
+ <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js">
+</script>
+    </head>
+    <body>
+        <button id="logoutbtn" class="glyphicon glyphicon-log-out btn btn-info" onclick="logout()">  LOGOUT</button>
+        <center>
+            <div class="container">
+                <h1>
+                    SCHOOL CHAT <sup>
+                        <img id="logo" src="https://img.freepik.com/premium-vector/water-logo-design_93835-621.jpg">
+                    </sup> 
+                </h1>
+                <br>
+                <br>
+                <div id="output" class="col-lg-8 col-md-8 col-sm-8"></div>
+                <br>
+            </div>
+            </center>
+            <center>
+            <div id="messagestypearea">
+                <br>
+                <label>SEND : </label>
+                <br>
+                <input id="message"  type="text" placeholder="TYPE THE MESSAGE">
+                <br>
+                <br>
+                <button id="sendbtn" onclick="send()" >SEND</button>
+                <br>
+                <br>
+            </div>
+            <script src="Chat.js"></script>
+        </center>
+    </body>
+</html>

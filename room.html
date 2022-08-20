@@ -1,0 +1,46 @@
+<Html>
+    <head>
+        <title>LETS CHAT WEBSITE (SCHOOL)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js">
+</script> <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js">
+    </script>
+ <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js">
+</script>
+    </head>
+    <body>
+        <button id="logoutbtn" class="glyphicon glyphicon-log-out" onclick="logout()" >&nbsp;LOGOUT</button>
+        <center>
+            <h1>WELCOME TO SCHOOL CHAT</h1>
+            <h4 id="Welcom_user"></h4>
+            <div class="container" id="Div2onPG2">
+            <h1>
+                SCHOOL CHAT 
+                <br>
+                <br>
+                <image src="https://img.freepik.com/premium-vector/water-logo-design_93835-621.jpg" id="logo"></image>
+            </h1>
+            <br>
+            <br>
+            <h4>CREATE YOUR OWN ROOM - </h4>
+            <br>
+            <input id="roomname" type="text" placeholder="enter the name of the room" class="form-control">
+            <br>
+            <br>
+            <button id="addroombtn" onclick="addroom()" >ADD ROOM !!!</button>
+            <br>
+            <br>
+            <br>
+            </div>
+            <div id="trendingroomsec">
+            <h1>#TRENDING ROOMS</h1>
+            <div id="output"></div>
+            </div>
+            </div>
+        </center>
+        <script src="room.js"></script>
+    </body>
+</Html>
